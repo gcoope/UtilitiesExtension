@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GeorgeUtils\gGameObjects.cs" />
+     <Compile Include="Assets\Scripts\GeorgeUtils\gMaths.cs" />
+     <Compile Include="Assets\Scripts\GeorgeUtils\gPhysics.cs" />
      <Compile Include="Assets\Scripts\TestingScript.cs" />
-     <Compile Include="Assets\Scripts\Utils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

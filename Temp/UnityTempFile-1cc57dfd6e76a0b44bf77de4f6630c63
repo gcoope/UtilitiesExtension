@@ -36,6 +36,7 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_WIN
+Assets/Scripts/Maths.cs
 Assets/Scripts/TestingScript.cs
 Assets/Scripts/Utils.cs
 -r:F:/MyPrograms/Unity4.3/Editor/Data/Mono\lib/mono/unity\System.Runtime.Serialization.dll
