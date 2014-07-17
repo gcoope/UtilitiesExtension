@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GeorgeUtils\gPhysics.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GeorgeUtils\gRaycast.cs">
     <Files>
-      <File FileName="Assets\Scripts\GeorgeUtils\gGameObjects.cs" Line="79" Column="35" />
+      <File FileName="Assets\Scripts\GeorgeUtils\gRaycast.cs" Line="24" Column="37" />
+      <File FileName="Assets\Scripts\GeorgeUtils\gGameObjects.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TestingScript.cs" Line="10" Column="49" />
       <File FileName="Assets\Scripts\GeorgeUtils\gPhysics.cs" Line="73" Column="27" />
     </Files>

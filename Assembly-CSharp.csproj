@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\GeorgeUtils\gGameObjects.cs" />
      <Compile Include="Assets\Scripts\GeorgeUtils\gMaths.cs" />
      <Compile Include="Assets\Scripts\GeorgeUtils\gPhysics.cs" />
+     <Compile Include="Assets\Scripts\GeorgeUtils\gRaycast.cs" />
      <Compile Include="Assets\Scripts\TestingScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
