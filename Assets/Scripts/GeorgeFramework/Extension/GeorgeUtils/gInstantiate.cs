@@ -9,10 +9,12 @@ namespace GeorgeUtils
 		/// Creates an empty game object.
 		/// </summary>
 		/// <param name="name">Name.</param>
-		public static void CreateEmptyGameObject(string name){
+		public static GameObject CreateEmptyGameObject(string name){
 			GameObject g = new GameObject();
 			g.name = name;
 			g.transform.position = new Vector3(0,0,0);
+			g.transform.parent = ContextManager.GetCurrentContext ().transform;
+			return g;
 		}
 
 		/// <summary>
@@ -27,6 +29,7 @@ namespace GeorgeUtils
 			if (useRigidbody) {
 				cube.AddComponent<Rigidbody> ();
 			}
+			cube.transform.parent = ContextManager.GetCurrentContext ().transform;
 			cube.transform.position = new Vector3(x, y, z);
 		}
 
@@ -42,7 +45,26 @@ namespace GeorgeUtils
 			if (useRigidbody) {
 				sphere.AddComponent<Rigidbody> ();
 			}
+			sphere.transform.parent = ContextManager.GetCurrentContext ().transform;
 			sphere.transform.position = new Vector3(x, y, z);
+		}
+
+		/// <summary>
+		/// Create 3D text mesh.
+		/// </summary>
+		/// <param name="text">Text.</param>
+		/// <param name="useWordWrap">If set to <c>true</c> use word wrap.</param>
+		/// <param name="lineLength">Line length.</param>
+		public static void Create3DTexT(string text, bool useWordWrap, int lineLength = 12, Vector3 position = default(Vector3)){
+			GameObject go = Instantiate(Resources.Load("3DText")) as GameObject;
+			TextMesh text3d = go.GetComponent<TextMesh> ();
+			if (useWordWrap) {
+				text3d.text = gGUI.WordWrapText (text, lineLength);
+			} else {
+				text3d.text = text;
+			}
+			go.transform.parent = ContextManager.GetCurrentContext ().transform;
+			go.transform.position = position;
 		}
 
 	}

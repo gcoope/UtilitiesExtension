@@ -46,19 +46,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\GeorgeUtils\gCamera.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gDebug.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gGUI.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gGameObjects.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gInput.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gInstantiate.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gMaterial.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gMaths.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gPhysics.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gRaycast.cs" />
-     <Compile Include="Assets\Scripts\GeorgeUtils\gRotation.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Context\ContextManager.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\BulkLoader\gBulkLoader.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gCamera.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gDebug.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gEffects.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gGUI.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gGameObjects.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gInput.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gInstantiate.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gMaterial.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gMaths.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gPhysics.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gRaycast.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\GeorgeUtils\gRotation.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\Extension\XMLParser\gXMLParser.cs" />
+     <Compile Include="Assets\Scripts\GeorgeFramework\StartApplcationCommand.cs" />
      <Compile Include="Assets\Scripts\TestingScript.cs" />
-     <Compile Include="Assets\Scripts\gEffects.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

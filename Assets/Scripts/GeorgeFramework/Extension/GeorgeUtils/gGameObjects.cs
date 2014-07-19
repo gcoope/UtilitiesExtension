@@ -105,6 +105,15 @@ namespace GeorgeUtils
 				Debug.Log("Could not find any objects with tag " + tag + " to enable");
 			}
 		}
+
+		public static void DisableAllButThis(GameObject g){
+			Object[] gos = GameObject.FindObjectsOfType (typeof(GameObject));
+			foreach (GameObject go in gos) {
+				if(go.name != "AppManager" && go.name != g.name){
+					go.SetActive(false);
+				}
+			}
+		}
 		#endregion
 
 	}
